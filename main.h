@@ -25,5 +25,12 @@ int _write_char(char);
 int print_char(va_list);
 int print_string(va_list);
 int print_percent(va_list);
+int print_integer(va_list);
+int print_number(va_list);
+int unsigned_integer(va_list);
+
+
+/*Helper functions*/
+int print_unsgined_number(unsigned int);
 
 #endif

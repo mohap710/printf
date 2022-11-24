@@ -25,7 +25,7 @@ int parser(const char *format, conver_t f_list[], va_list arg_list)
 					r_val = f_list[j].f(arg_list);
 					if (r_val == -1)
 						return (-1);
-					printed_chars += r_val
+					printed_chars += r_val;
 					break;
 				}
 			}
