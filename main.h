@@ -28,9 +28,11 @@ int print_percent(va_list);
 int print_integer(va_list);
 int print_number(va_list);
 int unsigned_integer(va_list);
-
+int print_binary(va_list);
 
 /*Helper functions*/
+unsigned int base_len(unsigned int, int);
+void write_base(char *str);
 int print_unsgined_number(unsigned int);
 
 #endif

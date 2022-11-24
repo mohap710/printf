@@ -10,12 +10,13 @@ int _printf(const char *format, ...)
 {
 	int printed_chars;
 	conver_t f_list[] = {
-	{"c", print_char},
-	{"s", print_string},
-	{"%", print_percent},
-	{"d", print_integer},
-	{"i", unsigned_integer},
-	{NULL, NULL}};
+		{"c", print_char},
+		{"s", print_string},
+		{"%", print_percent},
+		{"d", print_integer},
+		{"i", unsigned_integer},
+		{"b", print_binary},
+		{NULL, NULL}};
 	va_list arg_list;
 
 	if (format == NULL)
